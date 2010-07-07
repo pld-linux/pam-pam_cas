@@ -39,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README CHANGELOG INSTALL README
 %attr(755,root,root) /%{_lib}/security/pam_cas.so
-%config(noreplace) /%{_sysconfdir}/pam_cas.conf
+%config(noreplace) %{_sysconfdir}/pam_cas.conf
