@@ -11,13 +11,14 @@ Group:		Base
 Source0:	http://sourcesup.cru.fr/frs/download.php/1235/%{tarballname}.tar.gz
 Source1:	%{name}.Makefile
 URL:		http://www.esup-portail.org/consortium/espace/SSO_1B/tech/cas/cas_pam.html
-BuildRequires:	pam-devel
 BuildRequires:	openssl-devel
+BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-pam_cas provides means of authenticating users against a JA-SIG CAS server.
-See http://www.ja-sig.org/products/cas/ to learn more about CAS.
+pam_cas provides means of authenticating users against a JA-SIG CAS
+server. See http://www.ja-sig.org/products/cas/ to learn more about
+CAS.
 
 %prep
 %setup -q -n %{_archive_dir}
